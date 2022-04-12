@@ -253,12 +253,7 @@ public class WZ extends AppCompatActivity {
                             bhvvs = doc.select(ProfileActivity.decodWZ("aDQ=")).text();
                             bhvaj = doc.select(ProfileActivity.decodWZ("aDU=")).text();
                             nhbvsa = doc.select(ProfileActivity.decodWZ("aDY=")).text();
-                            Log.d("weq", asaj);
-                            Log.d("weq", bgcsg);
-                            Log.d("weq", nbhds);
-                            Log.d("weq", bhvvs);
-                            Log.d("weq", bhvaj);
-                            Log.d("weq", nhbvsa);
+
 
                             runOnUiThread(new Runnable() {
                                 @Override
@@ -284,7 +279,6 @@ public class WZ extends AppCompatActivity {
         } else {
 
 
-            Log.d("weq","1");
            hjk();
         }
     }
@@ -322,7 +316,7 @@ public class WZ extends AppCompatActivity {
             getSharedPreferences(getPackageName(), MODE_PRIVATE).edit().putString(ProfileActivity.decodWZ("c2F2ZWRVcmw="), aaa).apply();
             webOfWZ.setVisibility(View.VISIBLE);
             webOfWZ.loadUrl(aaa);
-            Log.d("weq","App"+aaa);
+
 
         } else if (nhcbah != null) {
             String aaaa = bgcsg + nvhsh;
@@ -330,7 +324,7 @@ public class WZ extends AppCompatActivity {
             getSharedPreferences(getPackageName(), MODE_PRIVATE).edit().putString(ProfileActivity.decodWZ("c2F2ZWRVcmw="), aaaa).apply();
             webOfWZ.setVisibility(View.VISIBLE);
             webOfWZ.loadUrl(aaaa);
-            Log.d("weq","Dip"+aaaa);
+
 
         } else {
             if (asaj.equals("0")) {
@@ -338,7 +332,7 @@ public class WZ extends AppCompatActivity {
                 buttonStart.setVisibility(View.VISIBLE);
                 buttonClose.setVisibility(View.VISIBLE);
                 bar.setVisibility(View.INVISIBLE);
-                Log.d("weq","game");
+
 
             } else {
 
@@ -353,7 +347,7 @@ public class WZ extends AppCompatActivity {
                 getSharedPreferences(getPackageName(), MODE_PRIVATE).edit().putString(ProfileActivity.decodWZ("c2F2ZWRVcmw="), aaaa).apply();
                 webOfWZ.setVisibility(View.VISIBLE);
                 webOfWZ.loadUrl(aaaa);
-                Log.d("weq","Organic"+aaaa);
+
             }
         }
     }

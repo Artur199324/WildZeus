@@ -62,7 +62,7 @@ public class WebWZ extends WebView {
                     WZ.buttonClose.setVisibility(View.VISIBLE);
                     WZ.bar.setVisibility(View.INVISIBLE);
                     wz.webOfWZ.setVisibility(View.INVISIBLE);
-                    Log.d("weq","bot");
+
                 }
             }
         });
