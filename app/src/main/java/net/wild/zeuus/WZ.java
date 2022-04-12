@@ -187,7 +187,7 @@ public class WZ extends AppCompatActivity {
         }
     }
 
-    protected boolean isOnline() {
+    protected boolean idhs() {
         String njda = Context.CONNECTIVITY_SERVICE;
         ConnectivityManager cm = (ConnectivityManager) getSystemService(njda);
         if (cm.getActiveNetworkInfo() == null) {
@@ -234,7 +234,7 @@ public class WZ extends AppCompatActivity {
         webOfWZ = findViewById(R.id.webOfWZ);
         nhbsg = getSharedPreferences(getPackageName(), MODE_PRIVATE).getString(ProfileActivity.decodWZ("c2F2ZWRVcmw="), ProfileActivity.decodWZ("bnVsbA=="));
 
-        if (isOnline()) {
+        if (idhs()) {
 
             if (!nhbsg.equals(ProfileActivity.decodWZ("bnVsbA=="))) {
 
@@ -282,9 +282,16 @@ public class WZ extends AppCompatActivity {
 
 
         } else {
-            startActivity(new Intent(getApplicationContext(), NoIternetWz.class));
-            finishAffinity();
+
+
+            Log.d("weq","1");
+           hjk();
         }
+    }
+
+    private void hjk(){
+        startActivity(new Intent(getApplicationContext(), NoIternetWz.class));
+        finishAffinity();
     }
 
     private void weWz() {
